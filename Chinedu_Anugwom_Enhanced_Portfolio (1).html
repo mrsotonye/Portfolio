@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinedu Anugwom Portfolio</title>
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        h1, h2, h3 {
+            margin-bottom: 0.5em;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(to right, #2c3e50, #34495e);
+            color: white;
+            text-align: center;
+            padding: 4em 0;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            background: url('https://via.placeholder.com/1500x500') center/cover no-repeat;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            background: #2c3e50;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+
+        /* Sections */
+        section {
+            padding: 3em 0;
+            background: white;
+            margin-bottom: 2em;
+        }
+        .section-title {
+            text-align: center;
+            color: #34495e;
+            margin-bottom: 1em;
+            font-size: 2rem;
+        }
+
+        /* About Section */
+        #about p {
+            text-align: center;
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            margin: 0 auto;
+            max-width: 700px;
+        }
+
+        /* Services */
+        .services, .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            background: #f39c12;
+            color: white;
+            padding: 1em 0;
+        }
+        .card p {
+            padding: 1em;
+            color: #7f8c8d;
+        }
+        .card a {
+            display: inline-block;
+            margin-top: 1em;
+            background: #34495e;
+            color: white;
+            padding: 0.5em 1em;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        .card a:hover {
+            background: #f39c12;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Chinedu Anugwom</h1>
+        <p>Web Designer | Social Media Manager | Graphic Designer</p>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about" class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! I’m Chinedu Anugwom, a versatile professional specializing in web design, social media management, and graphic design. 
+           With over five years of experience, I’ve helped brands, organizations, and individuals establish a powerful online presence. 
+           Let’s create something amazing together!</p>
+    </section>
+    <section id="services" class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Custom, responsive websites tailored to your brand, optimized for both functionality and aesthetics.</p>
+            </div>
+            <div class="card">
+                <h3>Social Media Management</h3>
+                <p>Engage your audience and grow your online presence with expertly curated content and strategies.</p>
+            </div>
+            <div class="card">
+                <h3>Graphic Design</h3>
+                <p>Creative designs for logos, banners, and marketing materials that capture attention and convey your message.</p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <div class="portfolio">
+            <div class="card">
+                <h3>Grace International School</h3>
+                <p>Website: <a href="http://www.graceschoolmali.com" target="_blank">www.graceschoolmali.com</a></p>
+                <p>Designed a user-friendly website showcasing school programs and increasing online engagement.</p>
+            </div>
+            <div class="card">
+                <h3>Minister Joseph LB</h3>
+                <p>Website: <a href="http://www.ministerjosephlb.com" target="_blank">www.ministerjosephlb.com</a></p>
+                <p>Created a professional portfolio website for a gospel artist, highlighting music and events.</p>
+            </div>
+            <div class="card">
+                <h3>Pad A Girl Initiative</h3>
+                <p>Social Media Campaigns for raising awareness and distributing sanitary pads to over 700 schoolgirls.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Email: <a href="mailto:anugwomchinedu@gmail.com">anugwomchinedu@gmail.com</a></p>
+        <p>Phone: +2347031219215 / +2349022259976</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Chinedu Anugwom. All rights reserved.</p>
+    </footer>
+</body>
+</html>
